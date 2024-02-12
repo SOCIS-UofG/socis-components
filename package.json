@@ -5,7 +5,7 @@
     "url": "git+https://github.com/SOCIS-UofG/socis-components"
   },
   "private": false,
-  "version": "0.0.100",
+  "version": "0.0.101",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -42,7 +42,9 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "next-auth": "^4.24.5",
     "postcss": "^8.4.33",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "sass": "^1.70.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
