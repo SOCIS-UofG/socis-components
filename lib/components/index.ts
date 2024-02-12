@@ -9,6 +9,7 @@ import "../index.css";
 export { default as Button } from "./Button";
 export { default as CustomCursor } from "./CustomCursor";
 export { default as ErrorMessage } from "./ErrorMessage";
+export { default as SuccessMessage } from "./SuccessMessage";
 export { default as MainWrapper } from "./MainWrapper";
 
 export { default as Navbar } from "./Navbar";
