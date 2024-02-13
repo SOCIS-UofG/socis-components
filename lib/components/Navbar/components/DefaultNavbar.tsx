@@ -25,7 +25,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
       />
       <div className="flex flex-row items-center justify-center gap-16">
         <Link
-          href="/"
+          href="https://socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
           <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
@@ -39,7 +39,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           ></span>
         </Link>
         <Link
-          href="/events"
+          href="https://events.socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
           <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
@@ -53,7 +53,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           ></span>
         </Link>
         <Link
-          href="/about"
+          href="https://socis.ca/about"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
           <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
@@ -67,7 +67,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           ></span>
         </Link>
         <Link
-          href="/membership"
+          href="https://socis.ca/membership"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
           <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
@@ -81,7 +81,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           ></span>
         </Link>
         <Link
-          href="auth.socis.ca"
+          href="https://account.socis.ca"
           className="btn bg-secondary mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary px-5 py-3 text-lg font-thin tracking-wider text-white duration-300 ease-in-out hover:bg-emerald-900/50 disabled:opacity-50"
         >
           ACCOUNT

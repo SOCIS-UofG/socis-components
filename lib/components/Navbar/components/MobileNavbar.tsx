@@ -39,7 +39,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
           )}
         >
           <Link
-            href="/#"
+            href="https://socis.ca/#"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
@@ -47,7 +47,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             HOME
           </Link>
           <Link
-            href="/events"
+            href="https://events.socis.ca"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
@@ -55,7 +55,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             EVENTS
           </Link>
           <Link
-            href="/about"
+            href="https://socis.ca/about"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
@@ -63,7 +63,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             ABOUT US
           </Link>
           <Link
-            href="/membership"
+            href="https://socis.ca/membership"
             className={cn(
               "btn mb-4 w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
@@ -71,7 +71,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             MEMBERSHIP
           </Link>
           <Link
-            href="auth.socis.ca"
+            href="https://account.socis.ca"
             className="btn bg-secondary mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary px-5 py-3 hover:bg-emerald-900/50 disabled:opacity-50"
           >
             <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out">
