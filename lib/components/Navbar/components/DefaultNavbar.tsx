@@ -33,7 +33,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           </p>
           <span
             className={cn(
-              "m-1 block h-px bg-emerald-400 duration-300 ease-in-out group-hover:w-3/5",
+              "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
               props.underlined === NavbarTabs.HOME ? "w-3/5" : "w-0",
             )}
           ></span>
@@ -47,7 +47,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           </p>
           <span
             className={cn(
-              "m-1 block h-px bg-emerald-400 duration-300 ease-in-out group-hover:w-3/5",
+              "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
               props.underlined === NavbarTabs.EVENTS ? "w-3/5" : "w-0",
             )}
           ></span>
@@ -61,7 +61,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           </p>
           <span
             className={cn(
-              "m-1 block h-px bg-emerald-400 duration-300 ease-in-out group-hover:w-3/5",
+              "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
               props.underlined === NavbarTabs.ABOUT ? "w-3/5" : "w-0",
             )}
           ></span>
@@ -75,7 +75,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
           </p>
           <span
             className={cn(
-              "m-1 block h-px bg-emerald-400 duration-300 ease-in-out group-hover:w-3/5",
+              "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
               props.underlined === NavbarTabs.MEMBERSHIP ? "w-3/5" : "w-0",
             )}
           ></span>

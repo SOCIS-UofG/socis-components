@@ -14,10 +14,10 @@ import { NavbarProps } from "./Navbar.types";
 const Navbar: FC<NavbarProps> = (props): JSX.Element => (
   <SessionProvider>
     <DefaultNavbar
-      className={cn("hidden flex-auto lg:flex", props.className)}
       {...props}
+      className={cn("hidden flex-auto lg:flex", props.className)}
     />
-    <MobileNavbar className={cn("lg:hidden", props.className)} {...props} />
+    <MobileNavbar {...props} className={cn("lg:hidden", props.className)} />
   </SessionProvider>
 );
 
