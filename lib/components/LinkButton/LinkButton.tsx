@@ -1,14 +1,14 @@
 import { cn } from "../../utils/cn";
 import { JSX, FC } from "react";
-import { HTMLButtonProps } from "./Button.types";
+import { HTMLLinkProps } from "./LinkButton.types";
 
 /**
- * Button Component
+ * Link Button Component
  *
  * @returns JSX.Element
  */
-const Button: FC<HTMLButtonProps> = (props): JSX.Element => (
-  <button
+const LinkButton: FC<HTMLLinkProps> = (props): JSX.Element => (
+  <a
     {...props}
     className={cn(
       "btn flex flex-col items-center justify-center rounded-lg border border-primary bg-secondary px-10 py-3 text-base font-thin tracking-wider text-white duration-300 ease-in-out hover:bg-emerald-950/50 disabled:opacity-50",
@@ -16,10 +16,10 @@ const Button: FC<HTMLButtonProps> = (props): JSX.Element => (
     )}
   >
     {props.children}
-  </button>
+  </a>
 );
 
 /**
  * Export the component by default
  */
-export default Button;
+export default LinkButton;
