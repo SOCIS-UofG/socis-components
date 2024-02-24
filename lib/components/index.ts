@@ -19,3 +19,5 @@ export { NavbarTabs } from "./Navbar";
 
 export { LoadingSpinner } from "./LoadingSpinner";
 export { LoadingSpinnerCenter } from "./LoadingSpinner";
+
+export * from "./Icons";
