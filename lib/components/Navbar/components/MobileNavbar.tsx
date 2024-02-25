@@ -15,13 +15,13 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className={cn("flex flex-col lg:hidden", props.className)}>
+    <div className={cn("relative flex flex-col lg:hidden", props.className)}>
       <Image
         src="/images/logo.png"
         alt="..."
         width={70}
         height={70}
-        className="btn fixed left-6 top-6 duration-300 ease-in-out"
+        className="btn fixed left-6 top-6 z-40 duration-300 ease-in-out"
         priority={true}
       />
 
@@ -34,7 +34,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
       {open && (
         <div
           className={cn(
-            "fixed left-0 top-0 z-[50] flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
+            "fixed left-0 top-0 z-50 flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
             props.className,
           )}
         >

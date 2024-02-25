@@ -14,14 +14,14 @@ const Navbar: FC<NavbarProps> = (props): JSX.Element => {
   // when the user scrolls, set the background to secondary
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.querySelector("nav");
-      if (navbar) {
+      const navbars = document.querySelectorAll(".navbar");
+      navbars.forEach((navbar) => {
         if (window.scrollY > 0) {
           navbar.classList.add("bg-secondary");
         } else {
           navbar.classList.remove("bg-secondary");
         }
-      }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
