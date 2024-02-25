@@ -5,7 +5,7 @@
     "url": "git+https://github.com/SOCIS-UofG/socis-components"
   },
   "private": false,
-  "version": "0.0.109",
+  "version": "0.0.110",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
