@@ -15,7 +15,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className={cn("flex flex-col", props.className)}>
+    <div className={cn("flex flex-col lg:hidden", props.className)}>
       <Image
         src="/images/logo.png"
         alt="..."
@@ -34,7 +34,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
       {open && (
         <div
           className={cn(
-            "bg-secondary fixed left-0 top-0 z-[50] flex h-auto w-screen flex-col border-b border-b-primary px-4 py-8",
+            "fixed left-0 top-0 z-[50] flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
             props.className,
           )}
         >
@@ -72,7 +72,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
           </Link>
           <Link
             href="https://account.socis.ca"
-            className="btn bg-secondary mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary px-5 py-3 hover:bg-emerald-900/50 disabled:opacity-50"
+            className="btn mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary bg-secondary px-5 py-3 hover:bg-emerald-900/50 disabled:opacity-50"
           >
             <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out">
               ACCOUNT

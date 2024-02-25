@@ -1,7 +1,7 @@
 import { cn } from "../../../utils/cn";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, type PropsWithChildren } from "react";
+import { FC } from "react";
 import { type NavbarProps, NavbarTabs } from "../Navbar.types";
 
 /**
@@ -10,11 +10,15 @@ import { type NavbarProps, NavbarTabs } from "../Navbar.types";
  * @param props Navbar props
  * @returns JSX.Element
  */
-const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
-  props,
-): JSX.Element => {
+const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
   return (
-    <nav className="fixed z-50 hidden w-screen flex-row items-center justify-between px-12 py-7 pr-20 lg:flex">
+    <nav
+      {...props}
+      className={cn(
+        "fixed z-50 hidden w-screen flex-auto flex-row items-center justify-between px-12 py-7 pr-20 lg:flex",
+        props.className,
+      )}
+    >
       <Image
         src="/images/logo.png"
         alt="..."
@@ -82,7 +86,7 @@ const DefaultNavbar: FC<PropsWithChildren<NavbarProps>> = (
         </Link>
         <Link
           href="https://account.socis.ca"
-          className="btn bg-secondary mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary px-5 py-3 text-lg font-thin tracking-wider text-white duration-300 ease-in-out hover:bg-emerald-900/50 disabled:opacity-50"
+          className="btn mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary bg-secondary px-5 py-3 text-lg font-thin tracking-wider text-white duration-300 ease-in-out hover:bg-emerald-900/50 disabled:opacity-50"
         >
           ACCOUNT
         </Link>

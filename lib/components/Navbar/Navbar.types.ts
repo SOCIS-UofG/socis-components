@@ -1,17 +1,31 @@
+import { DetailedHTMLProps, HTMLAttributes } from "react";
+
 export enum NavbarTabs {
   HOME,
   EVENTS,
   ABOUT,
   MEMBERSHIP,
+  CLUBS,
 }
 
-export interface NavbarProps {
-  className?: string;
+export type HTMLNavProps = DetailedHTMLProps<
+  HTMLAttributes<HTMLElement>,
+  HTMLElement
+>;
+
+export interface CustomNavProps {
   underlined?: NavbarTabs;
 }
 
-export interface MobileMenuBarsProps {
-  className?: string;
+export type NavbarProps = HTMLNavProps & CustomNavProps;
+
+export interface CustomMenuBarsProps {
   open: boolean;
-  onClick: () => void;
 }
+
+export type HTMLDivProps = DetailedHTMLProps<
+  HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
+
+export type MenuBarsProps = HTMLDivProps & CustomMenuBarsProps;
