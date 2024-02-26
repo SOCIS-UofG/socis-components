@@ -15,7 +15,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
     <nav
       {...props}
       className={cn(
-        "fixed z-[100] hidden w-screen flex-auto flex-row items-center justify-between px-12 py-7 pr-20 lg:flex",
+        "fixed left-0 top-0 z-[100] hidden w-screen flex-auto flex-row items-center justify-between px-12 py-7 pr-20 lg:flex",
         props.className,
       )}
     >
@@ -27,6 +27,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
         className="btn duration-300 ease-in-out hover:scale-105"
         priority={true}
       />
+
       <div className="flex flex-row items-center justify-center gap-16">
         <Link
           href="https://socis.ca"

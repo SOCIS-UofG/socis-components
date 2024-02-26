@@ -1,5 +1,5 @@
 /**
  * Export the component
  */
-export { default } from "./Navbar";
+export { default as Navbar } from "./Navbar";
 export { NavbarTabs } from "./Navbar.types";

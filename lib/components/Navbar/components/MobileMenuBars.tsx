@@ -21,7 +21,7 @@ const MobileMenuBars: FC<MenuBarsProps> = (props): JSX.Element => {
     <div
       onClick={props.onClick}
       className={cn(
-        "group fixed right-8 top-8 flex cursor-pointer flex-col items-end justify-end space-y-2.5 p-3",
+        "group flex cursor-pointer flex-col items-end justify-end space-y-2.5 p-3",
         props.className,
       )}
     >

@@ -1,6 +1,6 @@
 import { cn } from "../../../utils/cn";
 import { FC, useState } from "react";
-import MobileMenuBars from "./MenuBars";
+import MobileMenuBars from "./MobileMenuBars";
 import { type NavbarProps } from "../Navbar.types";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,25 +17,32 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
   return (
     <div
       className={cn(
-        "relative z-[100] flex flex-col lg:hidden",
+        "fixed left-0 top-0 z-[110] flex w-screen flex-col items-start justify-start lg:hidden",
         props.className,
       )}
     >
-      <Image
-        src="/images/logo.png"
-        alt="..."
-        width={70}
-        height={70}
-        className="btn fixed left-6 top-6 duration-300 ease-in-out"
-        priority={true}
-      />
+      <div
+        className={cn(
+          "flex w-full flex-row items-center justify-between p-4",
+          open ? "bg-secondary" : "",
+        )}
+      >
+        <Image
+          src="/images/logo.png"
+          alt="..."
+          width={70}
+          height={70}
+          className="btn duration-300 ease-in-out"
+          priority={true}
+        />
 
-      <MobileMenuBars open={open} onClick={() => setOpen(!open)} />
+        <MobileMenuBars open={open} onClick={() => setOpen(!open)} />
+      </div>
 
       {open && (
         <div
           className={cn(
-            "fixed left-0 top-0 flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
+            "flex h-auto w-full flex-col border-b border-b-primary bg-secondary px-4 py-8",
             props.className,
           )}
         >

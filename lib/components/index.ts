@@ -14,7 +14,7 @@ export { default as SuccessMessage } from "./SuccessMessage";
 export { default as MainWrapper } from "./MainWrapper";
 export { default as Background } from "./Background";
 
-export { default as Navbar } from "./Navbar";
+export { Navbar } from "./Navbar";
 export { NavbarTabs } from "./Navbar";
 
 export { LoadingSpinner } from "./LoadingSpinner";
