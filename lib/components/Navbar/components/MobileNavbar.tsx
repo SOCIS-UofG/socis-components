@@ -42,7 +42,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
       {open && (
         <div
           className={cn(
-            "flex h-auto w-full flex-col border-b border-b-primary bg-secondary px-4 py-8",
+            "flex h-auto w-full flex-col border-b border-b-primary bg-secondary px-4 pb-8 pt-6",
             props.className,
           )}
         >
