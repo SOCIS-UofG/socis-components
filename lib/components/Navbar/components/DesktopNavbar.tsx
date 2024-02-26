@@ -94,7 +94,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
           <span
             className={cn(
               "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
-              props.underlined === NavbarTabs.MEMBERSHIP ? "w-3/5" : "w-0",
+              props.underlined === NavbarTabs.CLUBS ? "w-3/5" : "w-0",
             )}
           ></span>
         </Link>
