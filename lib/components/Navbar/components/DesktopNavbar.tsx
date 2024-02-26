@@ -15,7 +15,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
     <nav
       {...props}
       className={cn(
-        "fixed z-50 hidden w-screen flex-auto flex-row items-center justify-between px-12 py-7 pr-20 lg:flex",
+        "fixed z-[100] hidden w-screen flex-auto flex-row items-center justify-between px-12 py-7 pr-20 lg:flex",
         props.className,
       )}
     >

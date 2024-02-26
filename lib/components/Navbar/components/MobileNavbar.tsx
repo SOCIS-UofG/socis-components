@@ -15,26 +15,27 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className={cn("relative flex flex-col lg:hidden", props.className)}>
+    <div
+      className={cn(
+        "relative z-[100] flex flex-col lg:hidden",
+        props.className,
+      )}
+    >
       <Image
         src="/images/logo.png"
         alt="..."
         width={70}
         height={70}
-        className="btn fixed left-6 top-6 z-40 duration-300 ease-in-out"
+        className="btn fixed left-6 top-6 duration-300 ease-in-out"
         priority={true}
       />
 
-      <MobileMenuBars
-        open={open}
-        onClick={() => setOpen(!open)}
-        className="z-[70]"
-      />
+      <MobileMenuBars open={open} onClick={() => setOpen(!open)} />
 
       {open && (
         <div
           className={cn(
-            "fixed left-0 top-0 z-50 flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
+            "fixed left-0 top-0 flex h-auto w-screen flex-col border-b border-b-primary bg-secondary px-4 py-8",
             props.className,
           )}
         >
@@ -65,7 +66,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
           <Link
             href="https://socis.ca/membership"
             className={cn(
-              "btn mb-4 w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
+              "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             MEMBERSHIP

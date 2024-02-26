@@ -14,14 +14,23 @@ const Navbar: FC<NavbarProps> = (props): JSX.Element => {
   // when the user scrolls, set the background to secondary
   useEffect(() => {
     const handleScroll = () => {
-      const navbars = document.querySelectorAll(".navbar");
-      navbars.forEach((navbar) => {
+      const navbarDesktop = document.querySelector(".navbar-desktop");
+      if (navbarDesktop) {
         if (window.scrollY > 0) {
-          navbar.classList.add("bg-secondary");
+          navbarDesktop.classList.add("bg-secondary");
         } else {
-          navbar.classList.remove("bg-secondary");
+          navbarDesktop.classList.remove("bg-secondary");
         }
-      });
+      }
+
+      const navbarMobile = document.querySelector(".navbar-mobile");
+      if (navbarMobile) {
+        if (window.scrollY > 0) {
+          navbarMobile.classList.add("bg-secondary");
+        } else {
+          navbarMobile.classList.remove("bg-secondary");
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,8 +39,14 @@ const Navbar: FC<NavbarProps> = (props): JSX.Element => {
 
   return (
     <>
-      <DefaultNavbar {...props} className={cn("navbar", props.className)} />
-      <MobileNavbar {...props} className={cn("navbar", props.className)} />
+      <DefaultNavbar
+        {...props}
+        className={cn("navbar-desktop", props.className)}
+      />
+      <MobileNavbar
+        {...props}
+        className={cn("navbar-mobile", props.className)}
+      />
     </>
   );
 };
