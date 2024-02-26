@@ -71,6 +71,14 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             MEMBERSHIP
           </Link>
           <Link
+            href="https://clubs.socis.ca"
+            className={cn(
+              "btn mb-4 w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
+            )}
+          >
+            CLUBS & INITIATIVES
+          </Link>
+          <Link
             href="https://account.socis.ca"
             className="btn mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary bg-secondary px-5 py-3 hover:bg-emerald-900/50 disabled:opacity-50"
           >

@@ -32,7 +32,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
           href="https://socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
-          <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
+          <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
             HOME
           </p>
           <span
@@ -46,7 +46,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
           href="https://events.socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
-          <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
+          <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
             EVENTS
           </p>
           <span
@@ -60,7 +60,7 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
           href="https://socis.ca/about"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
-          <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
+          <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
             ABOUT US
           </p>
           <span
@@ -74,8 +74,22 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
           href="https://socis.ca/membership"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
-          <p className="text-xl font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
+          <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
             MEMBERSHIP
+          </p>
+          <span
+            className={cn(
+              "m-1 block h-px bg-primary duration-300 ease-in-out group-hover:w-3/5",
+              props.underlined === NavbarTabs.MEMBERSHIP ? "w-3/5" : "w-0",
+            )}
+          ></span>
+        </Link>
+        <Link
+          href="https://clubs.socis.ca"
+          className="btn group flex flex-col items-center justify-center gap-2"
+        >
+          <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out group-hover:scale-110">
+            CLUBS
           </p>
           <span
             className={cn(
