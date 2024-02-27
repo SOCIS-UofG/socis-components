@@ -5,22 +5,13 @@
     "url": "git+https://github.com/SOCIS-UofG/socis-components"
   },
   "private": false,
-  "version": "0.0.124",
+  "version": "0.0.125",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/ui-react.es.js",
-      "require": "./dist/ui-react.umd.js",
-      "styles": "./dist/style.css"
-    },
-    "./css": "./dist/style.css"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
