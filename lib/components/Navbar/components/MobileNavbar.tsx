@@ -2,8 +2,7 @@ import { cn } from "../../../utils/cn";
 import { FC, useState } from "react";
 import MobileMenuBars from "./MobileMenuBars";
 import { type NavbarProps } from "../Navbar.types";
-import Image from "next/image";
-import Link from "next/link";
+import SOCISLogoWhite from "../../SOCISLogoWhite";
 
 /**
  * Mobile navbar component
@@ -27,14 +26,7 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
           open ? "bg-secondary" : "",
         )}
       >
-        <Image
-          src="/images/logo.png"
-          alt="..."
-          width={70}
-          height={70}
-          className="btn duration-300 ease-in-out"
-          priority={true}
-        />
+        <SOCISLogoWhite />
 
         <MobileMenuBars open={open} onClick={() => setOpen(!open)} />
       </div>
@@ -46,54 +38,54 @@ const MobileNavbar: FC<NavbarProps> = (props): JSX.Element => {
             props.className,
           )}
         >
-          <Link
+          <a
             href="https://socis.ca/#"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             HOME
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://events.socis.ca"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             EVENTS
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://socis.ca/about"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             ABOUT US
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://socis.ca/membership"
             className={cn(
               "btn w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             MEMBERSHIP
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://clubs.socis.ca"
             className={cn(
               "btn mb-4 w-full transform cursor-pointer px-5 py-3 text-sm font-normal tracking-widest text-primary duration-300 ease-in-out hover:translate-x-4",
             )}
           >
             CLUBS & INITIATIVES
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://account.socis.ca"
             className="btn mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary bg-secondary px-5 py-3 hover:bg-emerald-900/50 disabled:opacity-50"
           >
             <p className="text-lg font-thin tracking-wider text-white duration-300 ease-in-out">
               ACCOUNT
             </p>
-          </Link>
+          </a>
         </div>
       )}
     </div>

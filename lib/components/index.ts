@@ -16,6 +16,7 @@ export { default as Background } from "./Background";
 
 export { Navbar } from "./Navbar";
 export { NavbarTabs } from "./Navbar";
+export { default as SOCISLogoWhite } from "./SOCISLogoWhite";
 
 export { LoadingSpinner } from "./LoadingSpinner";
 export { LoadingSpinnerCenter } from "./LoadingSpinner";

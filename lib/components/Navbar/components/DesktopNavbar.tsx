@@ -1,8 +1,7 @@
 import { cn } from "../../../utils/cn";
-import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 import { type NavbarProps, NavbarTabs } from "../Navbar.types";
+import SOCISLogoWhite from "../../SOCISLogoWhite";
 
 /**
  * Default navbar component
@@ -19,17 +18,10 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
         props.className,
       )}
     >
-      <Image
-        src="/images/logo.png"
-        alt="..."
-        width={75}
-        height={75}
-        className="btn duration-300 ease-in-out hover:scale-105"
-        priority={true}
-      />
+      <SOCISLogoWhite />
 
       <div className="flex flex-row items-center justify-center gap-16">
-        <Link
+        <a
           href="https://socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
@@ -42,8 +34,8 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
               props.underlined === NavbarTabs.HOME ? "w-3/5" : "w-0",
             )}
           ></span>
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://events.socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
@@ -56,8 +48,8 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
               props.underlined === NavbarTabs.EVENTS ? "w-3/5" : "w-0",
             )}
           ></span>
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://socis.ca/about"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
@@ -70,8 +62,8 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
               props.underlined === NavbarTabs.ABOUT ? "w-3/5" : "w-0",
             )}
           ></span>
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://socis.ca/membership"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
@@ -84,8 +76,8 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
               props.underlined === NavbarTabs.MEMBERSHIP ? "w-3/5" : "w-0",
             )}
           ></span>
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://clubs.socis.ca"
           className="btn group flex flex-col items-center justify-center gap-2"
         >
@@ -98,13 +90,13 @@ const DefaultNavbar: FC<NavbarProps> = (props): JSX.Element => {
               props.underlined === NavbarTabs.CLUBS ? "w-3/5" : "w-0",
             )}
           ></span>
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://account.socis.ca"
           className="btn mb-3.5 flex flex-col items-center justify-center gap-2 rounded-lg border border-primary bg-secondary px-5 py-3 text-lg font-thin tracking-wider text-white duration-300 ease-in-out hover:bg-emerald-900/50 disabled:opacity-50"
         >
           ACCOUNT
-        </Link>
+        </a>
       </div>
     </nav>
   );
