@@ -6,12 +6,12 @@ import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [libInjectCss(), react(), dts({ include: ["lib"] })],
+  plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
     rollupOptions: {
       external: ["react", "react/jsx-runtime"],
       output: {
-        assetFileNames: "assets/[name][extname]",
+        assetFileNames: "[name][extname]",
         entryFileNames: "[name].js",
       },
     },
