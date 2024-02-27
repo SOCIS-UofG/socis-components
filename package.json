@@ -5,18 +5,10 @@
     "url": "git+https://github.com/SOCIS-UofG/socis-components"
   },
   "private": false,
-  "version": "0.0.131",
+  "version": "0.0.142",
   "type": "module",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/main.js",
-      "require": "./dist/main.js",
-      "styles": "./dist/main.css"
-    },
-    "./css": "./dist/main.css"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],

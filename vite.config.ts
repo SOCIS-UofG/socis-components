@@ -17,7 +17,7 @@ export default defineConfig({
     },
     copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, "lib/main.ts"),
+      entry: resolve(__dirname, "lib/index.ts"),
       formats: ["es"],
     },
   },
